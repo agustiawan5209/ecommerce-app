@@ -12,7 +12,6 @@ const Navbar = () => {
 
   const cart = JSON.parse(localStorage.getItem("cart") || "[]");
   // check real time cart length
-  const [cartLength, setCartLength] = useState(cart.length);
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/70 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6">
@@ -66,7 +65,7 @@ const Navbar = () => {
             >
               <FaShoppingCart size={20} />
               <span className="absolute -top-2 -right-2 bg-indigo-600 text-white text-xs px-1.5 rounded-full">
-                {cartLength}
+                {cart.length}
               </span>
             </motion.a>
 

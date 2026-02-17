@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { products } from "../data/products";
 import ProductCard from "../components/ProductCard";
-import { FaFilter, FaSortAmountDown } from "react-icons/fa";
+import { FaFilter } from "react-icons/fa";
 
 const Products = () => {
   const [sort, setSort] = useState("default");
